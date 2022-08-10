@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+
+<body>
+    <h1>Payment Form</h1>
+
+    <strong>Required Fields are Marked by * </strong>
+
+    <h3>Contact Information</h3>
+    <br />
+
+    <form>
+        <!--USER PREFIX RADIO BUTTONS-->
+
+        <!--1. Mr.-->
+        <input type="radio" name="userPrefix" value="mr." checked>
+        Mr.
+        
+        <br />
+        <!--2. Ms.-->
+        <input type="radio" name="userPrefix" value="ms.">
+        Ms.
+        <br />
+        <!--3. Mrs.-->
+        <input type="radio" name="userPrefix" value="mrs.">
+        Mrs.
+        <br />
+        <!--4. Mx.-->
+        <input type="radio" name="userPrefix" value="mx.">
+        Mx.
+        <br />
+            <!--NAME TEXTBOX-->
+        <p>
+            <label for = "name"> Name:*
+            </label>
+            <input id="name" type= "text" placeholder="Name" required/>
+        </p>
+             <!--EMAIL TEXTBOX-->
+        <p>
+            <label for = "email"> Email:*
+            </label>
+            <input id="email" type= "text" placeholder="Email" required/>
+        </p>
+
+
+        <h3>Payment Information</h3>
+        <!--CREDIT CARD DROPDOWN-->
+
+        Card Type:
+
+        <select>
+        <!--1. Visa -->
+        name= "creditSelect" id= "creditSelect">
+        <option value="visa">Visa</option>
+        <!--2. Mastercard -->
+        name= "creditSelect" id= "creditSelect">
+        <option value="mastercard">MasterCard</option>
+        <!--3. American Express -->
+        name= "creditSelect" id= "creditSelect">
+        <option value="american-express">American Express</option>
+        <!--4. Discover Card -->
+        name= "creditSelect" id= "creditSelect">
+        <option value="dicover">Discover</option>
+        <br />
+        </select>
+
+        <!--CREDIT CARD # TEXTBOX-->
+        <p>
+            <label for="creditCard#"> Card Number:*
+            </label>
+            <input id="creditCard#" type="tel" placeholder="xxxx xxxx xxxx xxxx" required />
+        </p>
+        <!--CREDIT CARD EXP. TEXTBOX-->
+        <p>
+            <label for="creditCardExpire"> Card Number:*
+            </label>
+            <input id="creditCardExpire" type="text" placeholder="mm/yy" />
+        </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+
+</html>
