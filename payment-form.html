@@ -11,9 +11,12 @@
 <body>
     <h1>Payment Form</h1>
 
-    <strong>Required Fields are Marked by * </strong>
+    <p> 
+    Required fields are marked by *
+    </p>
+    <br />
 
-    <h3>Contact Information</h3>
+    <h2>Contact Information</h2>
     <br />
 
     <form>
@@ -37,20 +40,20 @@
         Mx.
         <br />
             <!--NAME TEXTBOX-->
-        <p>
+        
             <label for = "name"> Name:*
             </label>
             <input id="name" type= "text" placeholder="Name" required/>
-        </p>
+        
              <!--EMAIL TEXTBOX-->
-        <p>
+        
             <label for = "email"> Email:*
             </label>
-            <input id="email" type= "text" placeholder="Email" required/>
-        </p>
+            <input id="email" type= "email" placeholder="Email" required/>
+        
 
 
-        <h3>Payment Information</h3>
+        <h2>Payment Information</h2>
         <!--CREDIT CARD DROPDOWN-->
 
         Card Type:
@@ -61,40 +64,32 @@
         <option value="visa">Visa</option>
         <!--2. Mastercard -->
         name= "creditSelect" id= "creditSelect">
-        <option value="mastercard">MasterCard</option>
+        <option value="mastercard">Mastercard</option>
         <!--3. American Express -->
         name= "creditSelect" id= "creditSelect">
         <option value="american-express">American Express</option>
         <!--4. Discover Card -->
         name= "creditSelect" id= "creditSelect">
-        <option value="dicover">Discover</option>
+        <option value="discover">Discover</option>
         <br />
         </select>
 
         <!--CREDIT CARD # TEXTBOX-->
-        <p>
+        
             <label for="creditCard#"> Card Number:*
             </label>
             <input id="creditCard#" type="tel" placeholder="xxxx xxxx xxxx xxxx" required />
-        </p>
+        
         <!--CREDIT CARD EXP. TEXTBOX-->
-        <p>
+        
             <label for="creditCardExpire"> Card Number:*
             </label>
-            <input id="creditCardExpire" type="text" placeholder="mm/yy" />
-        </p>
-
-
-
-
-
-
-
-
-
-
-
-
+            <input id="creditCardExpire" type="text" placeholder="mm/yy" required />
+        
+        <br />
+        <!--SUBMIT PAYMENT BUTTON-->
+        <input type="submit" value = "Submit Payment" > Submit Payment
+    </input>
 
     </form>
 </body>
